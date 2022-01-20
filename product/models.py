@@ -10,7 +10,7 @@ class Brand(models.Model):
     date_created = models.DateTimeField(auto_now_add=True, null=True)
 
     class Meta:
-        db_table = 'brand'
+        db_table = 'app_brand'
         ordering = [Upper('name')]
 
     def __str__(self):
@@ -24,7 +24,7 @@ class Shop(models.Model):
     date_created = models.DateTimeField(auto_now_add=True, null=True)
 
     class Meta:
-        db_table = 'shop'
+        db_table = 'app_shop'
 
     def __str__(self):
         return self.name
@@ -42,7 +42,7 @@ class Product(models.Model):
     modified_date = models.DateTimeField(auto_now=True, null=True)
 
     class Meta:
-        db_table = 'product'
+        db_table = 'app_product'
 
     def __str__(self):
         return self.name
@@ -54,4 +54,4 @@ class PriceHistory(models.Model):
     date_created = models.DateTimeField(auto_now_add=True, null=False)
 
     class Meta:
-        db_table = 'price_history'
+        db_table = 'app_price_history'
