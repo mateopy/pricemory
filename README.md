@@ -81,6 +81,11 @@ The runner output is logged in the file defined in the script
 python manage.py runserver 0.0.0.0:8000
 ```
 
+### Connect to SQL Database
+
+- If you are on Linux, [Install Microsoft ODBC Driver for SQL Server on Linux](https://docs.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server?view=sql-server-ver15)
+- Change DB_ENGINE to mssql in .env, edit other values accordingly. Make sure the DB_NAME exists in your SQL Server instance
+
 ## Contributing
 
 Pull requests are welcome.
